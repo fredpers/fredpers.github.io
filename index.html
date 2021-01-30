@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<title>Craft Beer Website</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<style>
+
+		</style>
+	</head>
+	<body class="col-12">
+		<div id="page-content">
+			<div class="row" style="background-color:white;">
+				<div class="col-12 head">
+					<img src="bilder/fabel-fredrik.png" alt="Fabel & Fredrik Icon" style="width:125px;height:108px;">
+					<img src="bilder/fabel-fredrik-name.png" alt="Our name" style="width:449px;height:108px;">
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-12 menu">
+					<div class="buttons" id="myMenu">
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<div class="container" onclick="myMenuIcon(this)">
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+								<div class="bar3"></div>
+							</div>
+						</a>
+						<a href="#home">Home</a>
+						<a href="#shop">Shop</a>
+						<a href="#kontakt">kontakt</a>
+						<a href="#about">Über uns</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-9 content">
+					<p>Content</p>
+				</div>
+				<div class="col-3 related">
+					<p>Banners etc.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 foot">
+					<p>footer</p>
+				</div>
+			</div>
+		</div>
+		<script>
+		
+			/* Function to change the menu when the width is below 810px */
+			function myFunction() {
+				var x = document.getElementById("myMenu");
+				if (x.className === "buttons") {
+					x.className += " responsive";
+				} 	else {
+						x.className = "buttons";
+					}
+			}
+			/* Function which toggles the change of the menu icon */
+			function myMenuIcon(x) {
+				x.classList.toggle("change");
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
